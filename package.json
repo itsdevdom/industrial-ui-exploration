@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "source": "src/index.html",
   "scripts": {
-    "build": "npm run clean && parcel build --no-source-maps",
+    "build": "npm run clean && parcel build --no-source-maps --public-url ./",
     "clean": "del-cli ./dist",
     "preview": "http-server -o ./dist",
     "start": "parcel serve --open"
