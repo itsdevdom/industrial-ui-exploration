@@ -1,0 +1,21 @@
+{
+  "name": "industrial-ui-exploration",
+  "private": true,
+  "version": "0.0.0",
+  "source": "src/index.html",
+  "scripts": {
+    "build": "npm run clean && parcel build --no-source-maps",
+    "clean": "del-cli ./dist",
+    "preview": "http-server -o ./dist",
+    "start": "parcel serve --open"
+  },
+  "engines": {
+    "node": "25",
+    "npm": "11"
+  },
+  "devDependencies": {
+    "del-cli": "7.0.x",
+    "http-server": "14.1.x",
+    "parcel": "2.14.x"
+  }
+}
